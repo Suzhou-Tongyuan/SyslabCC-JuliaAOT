@@ -1,5 +1,9 @@
 # SyslabCC: An AOT Compiler for Type-stable Julia Programs
 
+Basically, this is the repo for holding materials of the JuliaCon 2024 short talk, SyslabCC: An AOT Compiler for Type-stable Julia Programs.
+
+You might also open issues about the use of SyslabCC.
+
 ## The Highlighting Example
 
 ```julia

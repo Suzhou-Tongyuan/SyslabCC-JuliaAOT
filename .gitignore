@@ -1,0 +1,12 @@
+build/
+.syslabcc-cache/
+lib/
+
+*.dll
+*.so
+*.exe
+*.pdb
+*.obj
+*.lib
+*.dylib
+*.a

@@ -15,7 +15,7 @@ using Printf
 struct Empty # singleton type: Empty() === Empty()
 end
 
-struct Node
+mutable struct Node
     left::Union{Node,Empty}
     right::Union{Node,Empty}
 end

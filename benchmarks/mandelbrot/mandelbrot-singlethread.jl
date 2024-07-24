@@ -99,6 +99,17 @@ function mandelbrot(io, n)
 
     write(io, "P4\n$n $n\n")
     write(io, out)
+    # (EDIT) Print the hash of the output to check for correctness
+    # println(fixed_hash(out))
+end
+
+# (EDIT) Add hash function to check for correctness
+function fixed_hash(x::Vector{UInt8})
+    hash = UInt64(0)
+    for i in x
+        hash = hash * UInt64(0x100000001b3) ⊻ UInt64(i + 2)
+    end
+    reinterpret(Int64, hash)
 end
 
 function main(argv)

@@ -10,3 +10,4 @@ lib/
 *.lib
 *.dylib
 *.a
+*.out.txt
